@@ -129,8 +129,8 @@
   #video{
     display:block;
     margin:70px auto;
-    width:70%;
     min-width:300px;
+    max-width:600px;
     min-height:300px;
     align-items:center;
   }
