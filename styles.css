@@ -43,6 +43,7 @@
     list-style: none;
     font-size:1rem;
     padding:0.2em;
+    
   }
   #nav-bar > ul> li:hover {
     border:2px solid black;background-color:#f3f1ed;
@@ -86,6 +87,10 @@
     width:200px;
     font-size:1.2em;
     border-radius:5px;
+  }
+  #submit:active{
+    padding-top:2px;
+    padding-left:2px;
   }
   
   .feature{
@@ -177,6 +182,11 @@
     font-size:1.1em;
   }
   
+  .pricing-box button:active{
+    padding-top:2px;
+    padding-left:2px;
+  }
+  
   footer{
       background-color:#f9ecaf;
     max-width:950px;
@@ -205,13 +215,39 @@
   footer span {
     opacity:60%
   }
-
-  #submit:active{
-    padding-top:2px;
-    padding-left:2px;
+  
+  @media only screen and (max-width:790px) {
+    #pricing {
+      flex-wrap:wrap;
+    }
   }
-
-  .pricing-box button:active{
-    padding-top:2px;
-    padding-left:2px;
+  @media only screen and (max-width:490px){
+    #icon{
+      display:none;
+    }
   }
+  
+  @media only screen and (max-width:558px){
+    #nav-bar > ul{
+      flex-direction:column;
+      flex-wrap:nowrap;
+    }
+  }
+  
+  @media only screen and (max-width:435px){
+    header{
+      flex-wrap:wrap;
+      height:130px;
+    }
+     #nav-bar > ul{
+      display:block;
+      text-align:center;
+    }
+      #header-img{
+      display:none;
+    }
+    main{
+      margin-top:130px;
+    }
+  }
+  
