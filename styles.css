@@ -205,3 +205,13 @@
   footer span {
     opacity:60%
   }
+
+  #submit:active{
+    padding-top:2px;
+    padding-left:2px;
+  }
+
+  .pricing-box button:active{
+    padding-top:2px;
+    padding-left:2px;
+  }
